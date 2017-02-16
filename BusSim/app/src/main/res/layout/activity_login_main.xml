@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:andriod="http://schemas.android.com/apk/res-auto"
     android:background="#0099cc"
     android:id="@+id/activity_login_main"
     android:layout_width="match_parent"
@@ -26,19 +27,29 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/login"
-        android:onClick="onClick"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="92dp" />
+        android:onClick="startApp"
+        android:layout_marginBottom="88dp"
+        android:layout_above="@+id/deleteAccount_button"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:id="@+id/makeNewAccount_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/newuser"
-        android:onClick="onClick"
+        android:onClick="startApp"
         android:layout_above="@+id/login_button"
-        android:layout_alignLeft="@+id/login_button"
-        android:layout_alignStart="@+id/login_button"
-        android:layout_marginBottom="112dp" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="53dp" />
+
+    <Button
+        android:id="@+id/deleteAccount_button"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delete"
+        android:onClick="startApp"
+        android:layout_marginBottom="79dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
